@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог фільмів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🎬 Каталог фільмів</h1>
+  </header>
+
+  <main class="main-content">
+    <section class="form-section">
+      <h2>➕ Додати новий фільм</h2>
+      <form id="add-film-form">
+        <input type="text" id="title" placeholder="Назва фільму" required>
+        <input type="text" id="year" placeholder="Рік випуску" required>
+        <input type="text" id="genre" placeholder="Жанр" required>
+        <button type="submit">Додати фільм</button>
+      </form>
+    </section>
+
+    <section class="film-list-section">
+      <h2> Список фільмів</h2>
+      <ul id="film-list">
+        <!-- Динамічно додаються фільми -->
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Каталог фільмів SPA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
