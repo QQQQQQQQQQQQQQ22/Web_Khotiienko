@@ -1,0 +1,58 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Користувачі системи</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Панель адміністратора</h1>
+    <nav class="nav">
+      <a href="index.html">Головна</a>
+      <a href="profile.html">Мій профіль</a>
+      <a href="login.html">Вийти</a>
+    </nav>
+  </header>
+
+  <main class="admin-container">
+    <h2>Список користувачів</h2>
+
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Ім’я</th>
+          <th>Роль</th>
+          <th>Дії</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>nazar_user</td>
+          <td>Regular</td>
+          <td>
+            <a class="btn-small" href="edit-user.html?id=1">Редагувати</a>
+            <button class="btn-small btn-danger">Видалити</button>
+          </td>
+        </tr>
+        <tr>
+          <td>admin_1</td>
+          <td>Admin</td>
+          <td>
+            <a class="btn-small" href="edit-user.html?id=2">Редагувати</a>
+            <button class="btn-small btn-danger">Видалити</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="create-user.html" class="btn">Створити користувача</a>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Квитковий сервіс</p>
+  </footer>
+</body>
+</html>

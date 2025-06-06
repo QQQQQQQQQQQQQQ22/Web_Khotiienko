@@ -1,0 +1,75 @@
+<!-- event.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подія: CYBERPUNK ROCK CONCERT – Тур 2025</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Сервіс бронювання квитків</h1>
+    <nav class="nav">
+      <a href="index.html">Головна</a>
+      <a href="profile.html">Мій профіль</a>
+      <a href="login.html">Вийти</a>
+    </nav>
+  </header>
+
+  <main class="event-detail">
+    <section class="event-banner">
+      <img src="images/concert1.jpg" alt="CYBERPUNK ROCK CONCERT">
+      <div class="event-description">
+        <h2>CYBERPUNK ROCK CONCERT – Тур 2025</h2>
+        <p>10 липня 2025, 19:00<br>Київ, НСК Олімпійський</p>
+        <p>Грандіозний виступ легендарного гурту з найкращими хітами!</p>
+      </div>
+    </section>
+
+    <section class="ticket-list">
+      <h3>Доступні квитки</h3>
+
+      <details class="ticket-row">
+        <summary>Ряд 1</summary>
+
+        <div class="ticket">
+          <p>Місце 5 — 800 грн</p>
+          <button class="btn">Купити</button>
+          <button class="btn-outline">Забронювати</button>
+        </div>
+
+        <div class="ticket booked">
+          <p>Місце 6 — 800 грн</p>
+          <button class="btn" disabled>Вже заброньовано</button>
+        </div>
+
+        <div class="ticket bought">
+          <p>Місце 7 — 800 грн</p>
+          <button class="btn" disabled>Вже куплено</button>
+        </div>
+      </details>
+
+      <details class="ticket-row">
+        <summary>Ряд 2</summary>
+
+        <div class="ticket">
+          <p>Місце 1 — 750 грн</p>
+          <button class="btn">Купити</button>
+          <button class="btn-outline">Забронювати</button>
+        </div>
+
+        <div class="ticket">
+          <p>Місце 2 — 750 грн</p>
+          <button class="btn">Купити</button>
+          <button class="btn-outline">Забронювати</button>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Квитковий сервіс. Усі права захищено.</p>
+  </footer>
+</body>
+</html>

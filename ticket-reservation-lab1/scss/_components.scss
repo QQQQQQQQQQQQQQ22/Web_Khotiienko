@@ -1,0 +1,129 @@
+// _components.scss
+
+// Кнопки
+.btn {
+  @include button-style($primary-color);
+}
+
+.btn-outline {
+  @include button-style(transparent, $primary-color);
+  border: 2px solid $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.btn-small {
+  @include button-style($secondary-color, black);
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.btn-danger {
+  background-color: $error-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($error-color, 10%);
+  }
+}
+
+// Картка події
+.event-card {
+  background-color: white;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  max-width: 600px;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .event-info {
+    padding: 15px;
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Квитки
+.ticket {
+  background-color: white;
+  border: 1px solid $light-gray;
+  border-left: 5px solid $primary-color;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: $border-radius;
+
+  &.booked {
+    opacity: 0.6;
+    border-left-color: $secondary-color;
+  }
+
+  &.bought {
+    opacity: 0.4;
+    border-left-color: $error-color;
+  }
+
+  button {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+// Таблиця користувачів
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  th, td {
+    border: 1px solid $light-gray;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+}
+
+.ticket-row {
+  margin-bottom: 20px;
+  border: 1px solid $light-gray;
+  border-radius: $border-radius;
+  padding: 10px;
+
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: $primary-color;
+  }
+
+  .ticket {
+    margin-top: 10px;
+  }
+}

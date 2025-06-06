@@ -1,0 +1,55 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мій профіль</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Сервіс бронювання квитків</h1>
+    <nav class="nav">
+      <a href="index.html">Головна</a>
+      <a href="profile.html">Мій профіль</a>
+      <a href="login.html">Вийти</a>
+    </nav>
+  </header>
+
+  <main class="profile-container">
+    <section class="user-info">
+      <h2>Профіль користувача</h2>
+      <p><strong>Ім’я:</strong> NazarUser</p>
+      <p><strong>Роль:</strong> Regular</p>
+    </section>
+
+    <section class="ticket-history">
+      <h3>Куплені квитки</h3>
+
+      <div class="ticket bought">
+        <p>CYBERPUNK ROCK CONCERT — Сектор A, Ряд 1, Місце 7</p>
+        <p>Дата: 10.07.2025</p>
+      </div>
+
+      <div class="ticket bought">
+        <p>Театр — Сектор B, Ряд 3, Місце 2</p>
+        <p>Дата: 22.06.2025</p>
+      </div>
+    </section>
+
+    <section class="ticket-history">
+      <h3>Заброньовані квитки</h3>
+
+      <div class="ticket booked">
+        <p>Сектор A, Ряд 1, Місце 5 — 800 грн</p>
+        <button class="btn-outline">Скасувати бронювання</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Квитковий сервіс</p>
+  </footer>
+</body>
+</html>

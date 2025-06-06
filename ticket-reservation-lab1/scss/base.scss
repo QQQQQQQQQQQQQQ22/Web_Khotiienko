@@ -1,0 +1,13 @@
+// _base.scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $light-gray;
+  color: $dark-gray;
+  line-height: 1.6;
+}

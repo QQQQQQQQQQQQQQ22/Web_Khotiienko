@@ -1,0 +1,50 @@
+<!-- create-user.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Створення користувача</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Панель адміністратора</h1>
+    <nav class="nav">
+      <a href="index.html">Головна</a>
+      <a href="profile.html">Мій профіль</a>
+      <a href="login.html">Вийти</a>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <form class="user-form">
+      <h2>Створення нового користувача</h2>
+
+      <label for="username">Ім’я користувача</label>
+      <input type="text" id="username" name="username" placeholder="Введіть ім’я" required />
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" placeholder="Введіть пароль" required />
+
+      <label for="confirm-password">Підтвердьте пароль</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторіть пароль" required />
+
+      <label for="role">Роль</label>
+      <select id="role" name="role">
+        <option value="regular" selected>Regular</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn">Створити</button>
+        <a href="admin.html" class="btn-outline">Скасувати</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Квитковий сервіс</p>
+  </footer>
+</body>
+</html>
